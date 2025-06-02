@@ -1,0 +1,123 @@
+/* Estilo geral */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #3f3f3f;
+  color: #333;
+}
+
+header {
+  background-color: #3f3f3f;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header h3 {
+  font-weight: normal;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Galeria de imagens */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.image-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 10px;
+}
+
+.image-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: auto;
+}
+
+.image-card p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+/* Carta de amor */
+.carta {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #b3ad67;
+  border: 2px solid #f8fcb6;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.carta h2 {
+  margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header h3 {
+    font-size: 0.9rem;
+  }
+
+  .carta {
+    padding: 20px;
+    margin: 20px 10px;
+    font-size: 16px;
+  }
+
+  .image-card p {
+    font-size: 0.9rem;
+  }
+}
+
+.btn-musica {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 24px;
+  background-color: #ff6b81;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+
+.btn-musica:hover {
+  background-color: #ff4757;
+}
+
